@@ -1,0 +1,4 @@
+python-math==0.0.1
+pywin32==300
+selenium==3.14.0
+urllib3==1.26.2
