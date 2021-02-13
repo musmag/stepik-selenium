@@ -5,13 +5,10 @@ from .base_page import BasePage
 
 class MainPage(BasePage):
 
-    def go_to_login_page(self):
-        link = self.browser.find_element(*MainPageLocators.LOGIN_LINK).click()
-        time.sleep(3)
+#В классе MainPage у нас не осталось никаких методов, поэтому добавим туда заглушку:
+    def __init__(self, *args, **kwargs):
+        super(MainPage, self).__init__(*args, **kwargs)
 
 
-    def should_be_login_link(self):
-        assert self.is_element_present(*MainPageLocators.LOGIN_LINK), "Login link is not presented"
-        time.sleep(3)
 
 #это главная страница, на ней проверяем что ссылка есть
